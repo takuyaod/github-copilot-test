@@ -1,0 +1,44 @@
+# Dependencies
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Production build
+.next/
+out/
+build/
+
+# Environment variables
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Misc
+.DS_Store
+*.tgz
+*.tar.gz
+
+# Debug
+debug.log
+*.log
+
+# Git
+.git
+.gitignore
+
+# README
+README.md
+README_backup.md
+
+# IDE
+.vscode
+.idea
+
+# Testing
+.nyc_output
+coverage
+
+# Vercel
+.vercel
