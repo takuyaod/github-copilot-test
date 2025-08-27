@@ -53,6 +53,11 @@ This project is a modern web application built with Next.js 15, React 19, TypeSc
    docker compose --profile dev up nextjs-dev
    ```
 
+   **Note:** The Docker development environment is configured for hot reload with:
+   - Turbopack disabled (uses standard Next.js dev server for better Docker compatibility)
+   - File watching polling enabled (`WATCHPACK_POLLING=true`)
+   - Source code mounted as volume for real-time file changes
+
 3. **Open your browser:**
    Navigate to [http://localhost:3000](http://localhost:3000) to see the application.
 
@@ -103,7 +108,8 @@ github-copilot-test/
 
 ## 🔧 Available Scripts
 
-- `npm run dev` - Start the development server with Turbopack
+- `npm run dev` - Start the development server with Turbopack (recommended for local development)
+- `npm run dev:docker` - Start the development server without Turbopack (optimized for Docker containers)
 - `npm run build` - Build the application for production
 - `npm start` - Start the production server
 - `npm run lint` - Run ESLint for code quality checks
